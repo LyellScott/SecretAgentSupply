@@ -82,11 +82,13 @@ header p{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
+#menubutton{
+    display: none;
+}
 .products{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    justify-content: space-around;
     }
 .products div{
     display: flex;
@@ -115,10 +117,7 @@ header p{
 .locations{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     justify-content: space-between;
-
-    
 }
 .locations div{
     width: 35%;
@@ -138,4 +137,83 @@ footer{
     padding-top: 5rem;
     background-color: black;
     color: white;
+}
+#widenfoot{
+    background-color: black;
+}
+@media only screen and (max-width: 1024px){
+
+    .products{
+        max-width: 100%;
+    }
+    .products div{
+        width: 47%;
+        align-content: flex-start;
+        }
+    #glassimg{
+        display: none;
+    }
+    .container{
+        width: 1024px;
+    }
+    .locations{
+        max-width: 100%;
+    }
+    .locations div{
+        width: 35%;
+    }
+    .main-banner h5{
+        font-size: .85rem;
+    }
+    .main-banner h1{
+        font-size: 1.5rem;
+    }
+    .navigation .hide{
+        display: none;
+    }
+    #menubutton{
+        display: block;
+        background-color: firebrick;
+        text-align: center;
+    }
+    .navigation{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 470px){
+    .main-banner h5{
+        font-size: .77rem;
+    }
+    .main-banner h1{
+        font-size: 1rem;
+    }
+    .main-banner{
+        height: 15rem;
+    }
+    .main-banner h1{
+        padding-left: 2rem;
+    }
+    .main-banner h5{
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    #watchimg{
+        display: none;
+    }
+    .products{
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .products div{
+        width: 90%;
+    }
+    .locations{
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main-nar {
+        padding-top: 1.05rem;
+    }
 }
