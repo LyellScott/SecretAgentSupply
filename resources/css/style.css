@@ -4,24 +4,26 @@ html{
 }
 .container{
     display: flex;
-    align-items: center;
-    max-width: 960px;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 960px;
     margin: auto;
 }
-header{
+#widenhdrbg{
     background-color: black;
-    display: flex;
+}
+header{
     flex-direction: row;
+
     color: white;
-    align-items: center;
-    margin-bottom: 0;
+    align-items: flex-start;
 }
 header img{
     height: 1.5rem;
     padding-left: 0.5rem;
     padding-right: 1rem;
-}
-header h1{
+}   
+header p{
     padding-top: 0.66rem;
     padding-bottom: 0.66rem;
 }
@@ -34,11 +36,10 @@ header h1{
 }
 .main-banner div{ 
     color: white;
-
 }
 .main-nar{
     padding-top: 9rem;
-    display: inline-block;
+
     }
 .main-banner h5{
     width: 20rem;
@@ -50,8 +51,7 @@ header h1{
     padding-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    background-color: black;
-    
+    background-color: black;  
 }
 .main-banner h1{
     width: 20rem;
@@ -65,9 +65,13 @@ header h1{
 }
 .navigation{
     display: flex;
-    background-color: firebrick;
+    flex-direction: row;
+
     justify-content: space-between;
     justify-content: space-around;
+}
+#widenbg{
+    background-color: firebrick;
 }
 .navigation span{
     padding-bottom: 0.75rem;
@@ -95,12 +99,12 @@ header h1{
     margin-bottom: 0;
 }
 .products img{
-    height: 9rem;
+    height: 6rem; /*correction to specs*/
     padding-bottom: 2rem;
     padding-top: 2rem;
     width: auto;
-    
-}.products h6{
+}
+.products h6{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: white;
