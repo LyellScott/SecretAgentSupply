@@ -210,10 +210,22 @@ footer{
     }
     .locations{
         max-width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .locations div{
+        width: 90%;
+        margin-top: .5rem;
+        margin-bottom: 0;
+    
     }
     .main-nar {
         padding-top: 1.05rem;
+    }
+    footer div{
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
     }
 }
